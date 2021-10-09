@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaper1"
+    tools:context=".CreateSnapActivity">
+
+    <ImageView
+        android:id="@+id/createSnapImageView"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp"
+        android:adjustViewBounds="false"
+        android:background="@drawable/logo1"
+        android:cropToPadding="false"
+        app:layout_constraintBottom_toTopOf="@+id/chooseImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <Button
+        android:id="@+id/chooseImage"
+        android:layout_width="198dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="39dp"
+        android:backgroundTint="#41168E"
+        android:onClick="chooseImageClicked"
+        android:text="@string/chooseImage"
+        app:layout_constraintBottom_toTopOf="@+id/messageeditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createSnapImageView" />
+
+    <EditText
+        android:id="@+id/messageeditText"
+        android:layout_width="254dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="39dp"
+        android:ems="10"
+        android:hint="@string/hintMessage"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColorHint="#A6320E"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chooseImage" />
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="199dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginBottom="233dp"
+        android:backgroundTint="#19591C"
+        android:text="@string/next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/messageeditText" />
+</androidx.constraintlayout.widget.ConstraintLayout>

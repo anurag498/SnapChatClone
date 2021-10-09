@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">SnapchatClone</string>
+    <string name="enterEmail">Email</string>
+    <string name="enterPassword">Password</string>
+    <string name="login">LogIn</string>
+    <string name="notRegistered">Not Registered?</string>
+    <string name="signUp">SignUp</string>
+    <string name="chooseImage">Choose Image</string>
+    <string name="next">Next</string>
+    <string name="hintMessage">Message</string>
+    <string name="title">Title</string>
+    <string name="rememberMe">Remember Me</string>
+    <string name="welcome">WELCOME</string>
+
+</resources>
